@@ -4,9 +4,18 @@ const app = express();
 
 function delay(duration) {
     const startTime = Date.now();
+    //example of blocking function
     while (Date.now() - startTime < duration) {
         // event loop is blocked....
     }
+
+
+    // real life examples are:
+    // JSON.stringify({}) => "{}" for large objects
+    // JSON.parse("{}") => {} for large objects
+    // sorting large arrays
+    // crypto module methods
+
 }
 
 app.get('/', (req, res) => {
