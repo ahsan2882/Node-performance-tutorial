@@ -19,12 +19,14 @@ function delay(duration) {
 }
 
 app.get('/', (req, res) => {
-    return res.send('Performance Example');
+    res.send(`Performance Example: ${process.pid}`);
 })
 
 app.get('/timer', (req, res) => {
     delay(10000);
-    return res.send('Ding ding ding!!!!!!!!!!!')
+    res.send(`Ding ding ding!!!!!!!!!!! : ${process.pid}`)
 })
+console.log('Running server.js')
 
+console.log(`Worker ${process.pid} started`);
 app.listen(3000);
