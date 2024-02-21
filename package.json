@@ -19,6 +19,6 @@
   "homepage": "https://github.com/ahsan2882/Node-performance-tutorial#readme",
   "dependencies": {
     "express": "^4.17.3",
-    "pm2": "^5.2.0"
+    "pm2": "^5.3.1"
   }
 }
